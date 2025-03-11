@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front-End Developer Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+
+        .navbar {
+            background: #1e1e2f !important;
+        }
+
+        .hero-section {
+            background: linear-gradient(rgba(30, 30, 47, 0.8), rgba(30, 30, 47, 0.8)), url('banner.jpg') center/cover no-repeat;
+            height: 100vh;
+            color: white;
+        }
+
+        .btn-primary {
+            background: #ff5722;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background: #e64a19;
+        }
+
+        .section-heading {
+            color: #1e1e2f;
+            font-weight: bold;
+        }
+
+        .card {
+            border: none;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .skill-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">My Portfolio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section d-flex align-items-center text-center">
+        <div class="container">
+            <img src="/Portfolio images/THAMEEM ANSAR FORMAL.png" class="rounded-circle mb-4" alt="Candidate Image"
+                width="200">
+            <h1 class="display-4 fw-bold">I'm [Thameem Ansar]</h1>
+            <p class="lead">A Passionate Front-End Developer Specializing in Modern & Responsive Web Design</p>
+            <a href="#projects" class="btn btn-primary btn-lg">View My Work</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-heading">About Me</h2>
+            <p class="lead">I am a highly motivated front-end developer with a keen eye for design and a strong
+                understanding of modern web technologies. I create seamless, interactive, and engaging user experiences
+                with a mobile-first approach.</p>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="section-heading">Education</h2>
+            <p class="lead">Bachelor's Degree in Computer Science - [Crescent University] (2025)</p>
+            <p class="lead">High School - [Shalom School] (2021)</p>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container text-center">
+            <h2 class="section-heading">Skills</h2>
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="/Portfolio images/html.jpeg" class="skill-icon" alt="HTML Logo">
+                    <p>HTML</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="/Portfolio images/css.jpeg" class="skill-icon" alt="CSS Logo">
+                    <p>CSS</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="/Portfolio images/bootstrap.jpeg" class="skill-icon" alt="JavaScript Logo">
+                    <p>Bootstrap</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="bg-light py-5">
+        <div class="container text-center">
+            <h2 class="section-heading">Projects</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="/Portfolio images/portfolio.jpeg" class="card-img-top" alt="Portfolio Project">
+                        <div class="card-body">
+                            <h5 class="card-title">Personal Portfolio</h5>
+                            <p class="card-text">A modern, fully responsive portfolio website showcasing my skills,
+                                education, and projects.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <img src="/Portfolio images/lung cancer detection.jpeg" class="card-img-top" alt="Lung Cancer Detection">
+                        <div class="card-body">
+                            <h5 class="card-title">Lung Cancer Detection</h5>
+                            <p class="card-text">An AI-powered web application for early detection of lung cancer using
+                                machine learning.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-white" style="background-color: #1e1e2f;">
+        <div class="container text-center">
+            <h2 class="section-heading">Contact</h2>
+            <p>Email: example@example.com</p>
+            <a href="https://www.linkedin.com/in/yourname" class="btn btn-primary">LinkedIn</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
